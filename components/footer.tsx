@@ -16,14 +16,13 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-accent">
             <p className="text-sm">Crafted with</p>
             <Heart size={16} className="fill-accent" />
-            <p className="text-sm">and React</p>
           </div>
         </div>
 
         <div className="mt-6 pt-6 border-t border-border">
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/ashishc1232"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-70 hover:text-accent transition-colors text-sm"
@@ -31,20 +30,12 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="linkedin.com/in/ashish-chavan-fullstack-developer"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-70 hover:text-accent transition-colors text-sm"
             >
               LinkedIn
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="opacity-70 hover:text-accent transition-colors text-sm"
-            >
-              Twitter
             </a>
           </div>
         </div>
