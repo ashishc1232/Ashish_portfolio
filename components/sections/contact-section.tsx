@@ -141,7 +141,7 @@ export default function ContactSection() {
               data-aos="zoom-in"
               data-aos-duration="800"
               data-aos-delay="300"
-              className="p-6 rounded-2xl bg-card border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
+              className="p-6 shadow-xl shadow-black rounded-2xl bg-card border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex gap-4 items-start">
                 <div className="flex-shrink-0">
@@ -155,7 +155,7 @@ export default function ContactSection() {
                     href="mailto:your.email@example.com"
                     className="text-foreground/70 hover:text-accent transition-colors font-medium"
                   >
-                    your.email@example.com
+                    aashc7875@gmail.com
                   </a>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function ContactSection() {
               data-aos="zoom-in"
               data-aos-duration="800"
               data-aos-delay="400"
-              className="p-6 rounded-2xl bg-card border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
+              className="p-6 shadow-xl shadow-black rounded-2xl bg-card border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex gap-4 items-start">
                 <div className="flex-shrink-0">
@@ -177,10 +177,10 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Phone</h3>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+9834422504"
                     className="text-foreground/70 hover:text-accent transition-colors font-medium"
                   >
-                    +1 (234) 567-8900
+                    +91 9834422504
                   </a>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function ContactSection() {
               data-aos="zoom-in"
               data-aos-duration="800"
               data-aos-delay="500"
-              className="p-6 rounded-2xl bg-card border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
+              className="p-6 shadow-xl shadow-black rounded-2xl bg-card border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex gap-4 items-start">
                 <div className="flex-shrink-0">
@@ -202,7 +202,7 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Location</h3>
                   <p className="text-foreground/70 font-medium">
-                    City, Country
+                   Mumbai, Maharashtra, India
                   </p>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default function ContactSection() {
               data-aos="zoom-in"
               data-aos-duration="800"
               data-aos-delay="600"
-              className="p-6 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 border border-accent/20"
+              className="p-6 shadow-xl shadow-black rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 border border-accent/20"
             >
               <p className="text-sm text-foreground/60 mb-2 font-semibold tracking-wide">AVAILABILITY</p>
               <p className="text-foreground font-semibold mb-4">Open for opportunities</p>
@@ -230,7 +230,7 @@ export default function ContactSection() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
-            className="lg:col-span-2 space-y-6 bg-background p-8 rounded-2xl border-2 border-border hover:border-accent hover:shadow-lg transition-all duration-300"
+            className="lg:col-span-2 shadow-xl shadow-black space-y-6 bg-background p-8 rounded-2xl border-2 border-border hover:border-accent hover:shadow-lg transition-all duration-300"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Name Field */}

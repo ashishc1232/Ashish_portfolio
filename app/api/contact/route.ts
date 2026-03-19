@@ -95,12 +95,12 @@ export async function POST(request: NextRequest) {
             </p>
             
             <p style="color: #333; line-height: 1.6;">
-              In the meantime, feel free to check out my <a href="https://yourportfolio.com" style="color: #003566; text-decoration: none;">portfolio</a> to learn more about my work.
+              In the meantime, feel free to check out my <a href="https://ashish-portfolio-pi-wine.vercel.app/" style="color: #003566; text-decoration: none;">portfolio</a> to learn more about my work.
             </p>
             
             <p style="color: #333; line-height: 1.6;">
               Best regards,<br>
-              Full Stack Developer
+              Ashish Chavan
             </p>
             
             <hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">

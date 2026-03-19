@@ -69,9 +69,9 @@ export default function ProjectsSection() {
             data-aos-delay="100"
             className="inline-block mb-6"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+            <div className="inline-flex shadow-xl items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
              
-              <span className="text-sm font-semibold text-primary">MY PORTFOLIO</span>
+              <span className="text-sm  font-semibold text-primary">MY PORTFOLIO</span>
             </div>
           </div>
           <h2
@@ -115,7 +115,7 @@ export default function ProjectsSection() {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay={150 + index * 200}
-                className="relative group overflow-hidden rounded-2xl h-80 lg:h-96 border border-border"
+                className="relative shadow-xl shadow-black group overflow-hidden rounded-2xl h-80 lg:h-96 border border-border"
               >
                 <img
                   src={project.image}
@@ -194,7 +194,7 @@ export default function ProjectsSection() {
                 data-aos="zoom-in"
                 data-aos-duration="800"
                 data-aos-delay={400 + index * 100}
-                className="group relative"
+                className="group relative shadow-2xl rounded-xl shadow-black"
               >
                 {/* Card Background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>

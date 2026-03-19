@@ -63,7 +63,7 @@ export default function SkillsSection() {
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay={200 + index * 150}
-              className="group relative h-full"
+              className="group relative h-full shadow-xl shadow-black rounded-2xl"
             >
               {/* Card Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-r ${skill.color} rounded-2xl opacity-0 group-hover:opacity-15 transition-opacity duration-300 blur-xl`}></div>
@@ -92,7 +92,7 @@ export default function SkillsSection() {
           data-aos-delay="400"
           className="mt-16 bg-primary-dark text-white rounded-xl p-8 md:p-12"
         >
-          <h3 className="text-2xl font-bold mb-6">Core Competencies</h3>
+          <h3 className="text-2xl font-bold text-black mb-6">Core Competencies</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               'Clean Code',

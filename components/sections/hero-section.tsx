@@ -1,8 +1,17 @@
 'use client'
 
 import { ChevronDown, ArrowRight } from 'lucide-react'
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { SiNextdotjs, SiMongodb, SiExpress } from "react-icons/si";
 import Link from 'next/link'
-
+import Image from 'next/image';
+const techStack = [
+  { label: "React", desc: "UI Framework", icon: <FaReact /> },
+  { label: "Next.js", desc: "Full Stack", icon: <SiNextdotjs /> },
+  { label: "Node.js", desc: "Backend", icon: <FaNodeJs /> },
+  { label: "Express.js", desc: "Node Framework", icon: <SiExpress /> },
+  { label: "MongoDB", desc: "Database", icon: <SiMongodb /> },
+];
 export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
@@ -32,7 +41,7 @@ export default function HeroSection() {
                 data-aos-delay="200"
                 className="inline-flex items-center gap-2 w-fit"
               >
-               
+
                 <span className="text-accent text-sm font-semibold tracking-wide">WELCOME TO MY PORTFOLIO</span>
               </div>
 
@@ -91,14 +100,14 @@ export default function HeroSection() {
               >
                 <Link
                   href="#projects"
-                  className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 font-semibold group"
+                  className="inline-flex shadow-xl shadow-black items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 font-semibold group"
                 >
                   View My Work
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   href="#contact"
-                  className="inline-flex items-center gap-2 px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent/10 transition-colors duration-300 font-semibold"
+                  className="inline-flex shadow-xl shadow-slate-700 items-center gap-2 mb-3 lg:mb-0 px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent/10 transition-colors duration-300 font-semibold"
                 >
                   Get In Touch
                 </Link>
@@ -114,23 +123,17 @@ export default function HeroSection() {
             className="hidden lg:flex flex-col gap-6"
           >
             {/* Featured Tech Stack */}
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { label: 'React', desc: 'UI Framework', icon: '⚛️' },
-                { label: 'Next.js', desc: 'Full Stack', icon: '▲' },
-                { label: 'Node.js', desc: 'Backend', icon: '🟢' },
-                { label: 'MongoDB', desc: 'Database', icon: '🍃' },
-              ].map((tech, idx) => (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
+              {techStack.map((tech, idx) => (
                 <div
                   key={tech.label}
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                  data-aos-delay={800 + idx * 100}
-                  className="p-4 bg-background border border-border rounded-xl hover:border-accent/50 transition-all duration-300 group cursor-pointer"
+                  className="p-3 sm:p-4 shadow-2xl border rounded-xl text-center"
                 >
-                  <div className="text-3xl mb-2">{tech.icon}</div>
-                  <h4 className="font-semibold text-foreground text-sm">{tech.label}</h4>
-                  <p className="text-xs text-foreground/60 mt-1">{tech.desc}</p>
+                  <div className="text-2xl sm:text-3xl md:text-4xl mb-2">
+                    {tech.icon}
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-semibold">{tech.label}</h4>
+                  <p className="text-[10px] sm:text-xs opacity-60">{tech.desc}</p>
                 </div>
               ))}
             </div>
@@ -140,11 +143,18 @@ export default function HeroSection() {
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay="1000"
-              className="p-6 bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 rounded-2xl mt-4"
+              className="p-6 shadow-2xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 rounded-2xl mt-4"
             >
-              <div className="h-40 bg-gradient-to-br from-primary/20 to-accent/10 rounded-xl mb-4 flex items-center justify-center">
-                <div className="text-5xl">💻</div>
+              <div className="relative  h-40 bg-gradient-to-br from-primary/20 to-accent/10 rounded-xl mb-4 overflow-hidden">
+                <Image
+                  src="/laptop.jpg"
+                  alt="program"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                />
               </div>
+
               <h3 className="text-lg font-semibold text-foreground mb-2">Building the Future</h3>
               <p className="text-sm text-foreground/60">
                 Creating innovative solutions with cutting-edge technologies and best practices.

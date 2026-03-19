@@ -1,11 +1,14 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import {  Poppins } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import AOSInitializer from '@/components/aos-initializer'
 
-const _geist = Geist({ subsets: ["latin"], variable: '--font-geist-sans' });
-const _geistMono = Geist_Mono({ subsets: ["latin"], variable: '--font-geist-mono' });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -15,14 +18,14 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Full Stack Developer Portfolio',
+  title: 'Ashish Portfolio',
   description: 'Professional portfolio showcasing full stack development expertise, projects, and experience',
-  keywords: ['Full Stack Developer', 'React', 'Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
-  authors: [{ name: 'Developer Portfolio' }],
+  keywords: ['Full Stack Developer', 'React','Express.js', 'Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
+  authors: [{ name: 'Ashish Portfolio' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://portfolio.example.com',
+    url: 'https://ashish-portfolio-pi-wine.vercel.app/',
     title: 'Full Stack Developer Portfolio',
     description: 'Professional portfolio showcasing full stack development expertise',
   },
@@ -32,21 +35,8 @@ export const metadata: Metadata = {
     description: 'Professional portfolio showcasing full stack development expertise',
   },
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.ico', // <-- single favicon
+    apple: '/favicon.ico', // <-- for iOS
   },
 }
 
@@ -56,8 +46,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${_geist.variable} ${_geistMono.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${poppins.variable}`}>
+      <body className={`${poppins.className} antialiased`}>
         <AOSInitializer />
         {children}
         <Analytics />

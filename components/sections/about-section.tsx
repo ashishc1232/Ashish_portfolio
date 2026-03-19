@@ -130,7 +130,7 @@ export default function AboutSection() {
                   {/* Timeline dot */}
                   <div className="absolute -left-4 top-0 w-6 h-6 bg-accent rounded-full border-4 border-background group-hover:scale-125 transition-transform duration-300"></div>
 
-                  <div className="p-4 rounded-lg bg-card border border-border group-hover:border-accent/50 transition-all duration-300">
+                  <div className="p-4 shadow-xl shadow-black rounded-lg bg-card border border-border group-hover:border-accent/50 transition-all duration-300">
                     <h4 className="text-lg font-bold text-foreground mb-1">{exp.title}</h4>
                     <p className="text-sm text-accent font-semibold mb-2">{exp.company}</p>
                     <p className="text-xs text-foreground/50 mb-3 font-medium">{exp.period}</p>
