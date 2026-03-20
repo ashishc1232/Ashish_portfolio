@@ -30,7 +30,7 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="linkedin.com/in/ashish-chavan-fullstack-developer"
+              href="https://www.linkedin.com/in/ashish-chavan-fullstack-developer/"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-70 hover:text-accent transition-colors text-sm"
