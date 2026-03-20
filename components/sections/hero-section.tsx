@@ -78,40 +78,46 @@ export default function HeroSection() {
                 className="grid grid-cols-3 gap-6 pt-4 border-t border-border"
               >
                 <div className="space-y-2">
-                  <p className="text-3xl font-bold text-accent">2+</p>
+                  <p className="text-3xl font-bold text-accent">1+</p>
                   <p className="text-sm text-foreground/60">Years Experience</p>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-3xl font-bold text-accent">10+</p>
+                  <p className="text-3xl font-bold text-accent">7+</p>
                   <p className="text-sm text-foreground/60">Projects</p>
                 </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-accent">100%</p>
-                  <p className="text-sm text-foreground/60">Satisfaction</p>
-                </div>
+
               </div>
 
               {/* CTA Buttons */}
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="600"
-                className="flex flex-wrap gap-4 pt-4"
-              >
-                <Link
-                  href="#projects"
-                  className="inline-flex shadow-xl shadow-black items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 font-semibold group"
-                >
-                  View My Work
-                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link
-                  href="#contact"
-                  className="inline-flex shadow-xl shadow-slate-700 items-center gap-2 mb-3 lg:mb-0 px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent/10 transition-colors duration-300 font-semibold"
-                >
-                  Get In Touch
-                </Link>
-              </div>
+            <div
+  data-aos="fade-up"
+  data-aos-duration="1200"
+  data-aos-delay="600"
+  className="flex flex-wrap gap-4 pt-4"
+>
+  <Link
+    href="#projects"
+    className="inline-flex shadow-xl shadow-black items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 font-semibold group"
+  >
+    View My Work
+    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+  </Link>
+
+  <a
+    href="/Ashish_Chavan_Resume.pdf"
+    download
+    className="inline-flex shadow-xl shadow-black items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 font-semibold"
+  >
+    Download Resume
+  </a>
+
+  <Link
+    href="#contact"
+    className="inline-flex shadow-xl shadow-slate-700 items-center gap-2 mb-3 lg:mb-0 px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent/10 transition-colors duration-300 font-semibold"
+  >
+    Get In Touch
+  </Link>
+</div>
             </div>
           </div>
 

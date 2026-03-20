@@ -7,13 +7,8 @@ export default function AboutSection() {
       company: 'Quastech',
       period: '2025 - present',
       description: 'Built responsive web applications, managed databases, implemented REST APIs for multiple clients.',
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'Codify Software Solutions',
-      period: '2024 - 2025',
-      description: 'Developed front-end components, fixed bugs, assisted in code reviews and testing.',
-    },
+    }
+    
   ]
 
   return (
@@ -32,7 +27,7 @@ export default function AboutSection() {
             className="inline-block mb-6"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-            
+
               <span className="text-sm font-semibold text-primary">ABOUT ME</span>
             </div>
           </div>
@@ -67,7 +62,7 @@ export default function AboutSection() {
                 data-aos-delay="300"
                 className="text-foreground/80 text-lg leading-relaxed"
               >
-                I'm a full-stack developer with 2+ years of experience building scalable, performant, and accessible web applications. I specialize in the MERN stack (MongoDB, Express, React, Node.js) and modern frontend frameworks like Next.js and TypeScript.
+                I'm a full-stack developer with 1+ years of experience building scalable, performant, and accessible web applications. I specialize in the MERN stack (MongoDB, Express, React, Node.js) and modern frontend frameworks like Next.js and TypeScript.
               </p>
 
               <p
@@ -76,7 +71,7 @@ export default function AboutSection() {
                 data-aos-delay="400"
                 className="text-foreground/70 text-lg leading-relaxed"
               >
-                I believe in writing clean, maintainable code and creating delightful user experiences that prioritize both aesthetics and functionality.
+                From building exam platforms for 500+ students to crafting finance websites for college cells — I love turning real problems into clean, fast web apps.
               </p>
 
               <div
