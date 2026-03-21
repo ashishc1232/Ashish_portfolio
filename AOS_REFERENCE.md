@@ -310,17 +310,4 @@ AOS.init({
 - **Easing Functions**: https://easings.net/
 - **Performance Tips**: https://michalsnik.github.io/aos/#performanceOptimization
 
-## ✨ Quick Reference Table
 
-| Attribute | Type | Default | Range |
-|-----------|------|---------|-------|
-| data-aos | string | - | animation name |
-| data-aos-duration | number | 400 | 100-3000 |
-| data-aos-delay | number | 0 | 0-5000 |
-| data-aos-offset | number | 120 | 0-1000 |
-| data-aos-once | boolean | false | true/false |
-| data-aos-mirror | boolean | true | true/false |
-
----
-
-Use this reference to create smooth, professional animations throughout your portfolio! 🎨
